@@ -28,7 +28,7 @@ pub async fn compare_prices(
 
     // HERE
 
-    if difference >= 7.2 {
+    if difference >= 5.0 {
         let tweeted_symbols = shared_state.tweeted_symbols.read().await;
         if !tweeted_symbols.contains(symbol) {
             drop(tweeted_symbols);
